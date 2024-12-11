@@ -6,9 +6,6 @@ body {
     height: 100vh;
 }
 
-.sidebar {
-    height: 100vh;
-}
 
 .clock {
     font-size: 5rem;
@@ -97,7 +94,35 @@ body {
 @media (max-width: 1200px) {}
 
 /* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        bottom: 0;
+        left: -350px;
+        min-width: 350px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #343a40;
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        -webkit-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        -ms-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%x);
+        -moz-transform: translateX(100%x);
+        -ms-transform: translateX(100%x);
+        -o-transform: translateX(100%x);
+    }
+}
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {}

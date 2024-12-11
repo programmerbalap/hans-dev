@@ -36,3 +36,14 @@ function rotateText() {
 }
 setInterval(rotateText, 3000);
 rotateText();
+
+
+(function () {
+    'use strict'
+    document.querySelector('#navbarSideCollapse').addEventListener('click', function () {
+        document.querySelector('.offcanvas-collapse').classList.toggle('open')
+    })
+    document.querySelector('#close').addEventListener('click', function () {
+        document.querySelector('.offcanvas-collapse').classList.toggle('open')
+    })
+})();

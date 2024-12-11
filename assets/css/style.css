@@ -4,6 +4,9 @@ body {
     background-color: black;
     color: white;
     height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 

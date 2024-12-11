@@ -47,3 +47,14 @@ rotateText();
         document.querySelector('.offcanvas-collapse').classList.toggle('open')
     })
 })();
+
+
+// Mencegah klik kanan
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+// Mencegah kombinasi keyboard tertentu (Ctrl+C, Ctrl+X, dll.)
+document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && (e.key === "c" || e.key === "x" || e.key === "v")) {
+        e.preventDefault();
+    }
+});

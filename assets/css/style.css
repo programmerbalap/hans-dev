@@ -7,6 +7,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    z-index: 9999999999999999999999 !important;
 }
 
 
@@ -132,3 +133,143 @@ body {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+#google_translate .goog-te-gadget {
+    color: transparent !important;
+    font-size: 0;
+    background: transparent !important;
+}
+
+#google_translate {
+    margin-left: -10px;
+}
+
+#google_translate select {
+    background: transparent !important;
+    border: 0;
+    color: white;
+    margin-left: -5px;
+}
+
+#google_translate select option {
+    border: 1 solid #ffea00 !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: #232323 !important;
+}
+
+#google_translate select option:hover {
+    background-color: #f6ff00 !important;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.jargon {
+    background: linear-gradient(45deg, red, orange, yellow, white, green, indigo, violet, yellow, white, green, indigo, violet, orange, yellow, white, green, indigo, violet, yellow, white, red, orange, yellow, white, green, indigo, violet, red, orange, yellow, white, green, indigo, violet, yellow, white, green, indigo, violet, red, orange, yellow, white, green, indigo, violet);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 10s infinite;
+    -webkit-animation: gradient 10s infinite;
+}
+
+.rainbow-text {
+    font-weight: bold;
+    font-size: 2rem;
+    background: linear-gradient(45deg, red, orange, yellow, white, green, indigo, violet);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 5s infinite;
+}
+
+#typewriter {
+    font-size: 1rem;
+    color: #6c757d;
+    white-space: wrap;
+    border-right: 2px solid #6c757d;
+    display: inline;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#typewriter {
+    animation: blink 0.7s infinite;
+}
+
+
+.custom-input {
+    background-color: transparent !important;
+    /*Pastikantransparan*/
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    /*Hilangkanoutline*/
+    padding: 5px 0;
+    transition: border-color 0.3s ease;
+    color: white !important;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+    /* Hilangkan bayangan saat fokus */
+    outline: none;
+    /* Pastikan tidak ada outline */
+    border-bottom: 2px solid #ffe600;
+    /* Atur efek garis bawah fokus */
+}
+
+.custom-input::placeholder {
+    color: #aaa;
+    opacity: 1;
+}

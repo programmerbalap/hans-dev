@@ -56,7 +56,7 @@ rotateText();
 })();
 
 
-// document.addEventListener("contextmenu", (e) => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 // document.addEventListener("keydown", (e) => {
 //     if (e.ctrlKey && (e.key === "c" || e.key === "x" || e.key === "v")) {
